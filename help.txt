@@ -1,0 +1,11 @@
+ java -jar spring-jdbc-1.0.jar -Dschema=5
+ java -jar spring-jdbc-1.0.jar -Dschema=253
+
+
+id, patientKey,patientFirstName,patientLastName,date,statusId,categoryId,nurseId,lastCallAttemptTime,note
+
+
+COPY persons TO 'C:\tmp\persons_db.csv' DELIMITER ',' CSV HEADER;
+
+
+id,createddate,deleted,modifieddate,modifiedmemberid,version,actualstarttime,categoryid,clinicid,createdsource,creatorid,date,dentalpointid,dentistid,duration,endtime,lastcallattempttime,note,patientdateofbirth,patientemail,patientfirstname,patientgendercode,patientkey,patientlastname,patientmobilephonenumber,patientmobilephonenumberclear,starttime,starteddevicetoken,statusid,tempuser,companypatientids,referral,specialitycode,cashtreatmentpriceid,nurseid,googleid,googleupdateddate,companytemppatientid,mastertypecode,machineid,treatmentgroupid,treatmentsubgroupid,treatmentsubsubgroupid,locationid
